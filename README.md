@@ -32,7 +32,7 @@ Docker acts as a middleman between the operating system and the application runn
 1) Used AI to narrow the project scope - I asked what would be the best way to create a security sandbox, and through questions, defined the project's function as an isolated browser for safe link testing.
 2) Installed Docker Desktop on Windows 11 (setup guidance provided by AI).
 3) Discovered the jlesage/firefox image through AI recommendations—it was a better fit for isolated browsing than my initial Kali Linux experiments.
-4) Ran the Firefox container using: ```bash docker run -d --name=firefox-sandbox -p 5800:5800 jlesage/firefox ``` (Note: The port mapping X:X can be adjusted, I used 5800:5800 for this project.)
+4) Ran the Firefox container using: ```docker run -d --name=firefox-sandbox -p 5800:5800 jlesage/firefox``` (Note: The port mapping X:X can be adjusted, I used 5800:5800 for this project.)
 5) After waiting a few minutes, accessed Firefox at http://localhost:5800.
 6) Learned container management - When done, I could stop the sandbox using: docker stop firefox-sandbox (This can also be done through the Docker Desktop application's stop button.)
 7) Discovered an important lesson - If I tried to run a new container with the same name without removing the old one, Docker gave an error that the container already exists. Instead of creating a new one, I could restart the existing container with: docker start firefox-sandbox
