@@ -25,7 +25,7 @@ Docker acts as a middleman between the operating system and the application runn
 - jlesage/firefox - Docker image with Firefox and VNC web access
 - PowerShell - For running Docker commands
 - Windows 11 - Host operating system
-- AI assistant - For step-by-step guidance and troubleshooting during development
+- AI assistant - For guidance and troubleshooting during development
 
 ## Steps I Took
 
