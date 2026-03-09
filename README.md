@@ -42,9 +42,13 @@ Docker acts as a middleman between the operating system and the application runn
    ```
    docker stop firefox-sandbox
    ```
-(This can also be done through the Docker Desktop application's stop button.)
+   (This can also be done through the Docker Desktop application's stop button.)
 7) Discovered an important lesson - If I tried to run a new container with the same name without removing the old one, Docker gave an error that the container already exists. Instead of creating a new one, I could restart the existing container with: docker start firefox-sandbox
-8) Removed the container when I wanted a completely fresh start: docker rm firefox-sandbox, This allows me to run step 4 again for a brand new, clean sandbox next time.
+8) Removed the container when I wanted a completely fresh start:
+    ```
+    docker rm firefox-sandbox
+    ```
+   This allows me to run step 4 again for a brand new, clean sandbox next time.
 
 ## What I Learned
 
