@@ -39,9 +39,9 @@ Docker acts as a middleman between the operating system and the application runn
    (Note: The port mapping X:X can be adjusted, I used 5800:5800 for this project.)
 5) After waiting a few minutes, accessed Firefox at http://localhost:5800.
 6) Learned container management - When done, I could stop the sandbox using:
-  ```
+   ```
    docker stop firefox-sandbox
-  ```
+   ```
 (This can also be done through the Docker Desktop application's stop button.)
 7) Discovered an important lesson - If I tried to run a new container with the same name without removing the old one, Docker gave an error that the container already exists. Instead of creating a new one, I could restart the existing container with: docker start firefox-sandbox
 8) Removed the container when I wanted a completely fresh start: docker rm firefox-sandbox, This allows me to run step 4 again for a brand new, clean sandbox next time.
