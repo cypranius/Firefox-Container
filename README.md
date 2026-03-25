@@ -38,7 +38,7 @@ Docker acts as a middleman between the operating system and the application runn
    ```
    (Note: The port mapping X:X can be adjusted, I used 5800:5800 for this project.)
 5) After waiting a few minutes, accessed Firefox at http://localhost:5800.
-6) Learned container management - When done, I could stop the sandbox using:
+6) Learned container management, when done I could stop the sandbox using:
    ```
    docker stop firefox-sandbox
    ```
